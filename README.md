@@ -33,12 +33,13 @@ Docker 的一些服务所在域名被封杀，无法直接访问和拉取镜像�
 > source: docker.io
 > # 目标源 (Registry)
 > destination: registry.cn-beijing.aliyuncs.com
-> # 仓库及标签 (格式 repo:tag)
-> source_repo: nginx:1.13
-> # 目标仓库及标签 (格式 repo:tag)
-> destination_repo: ikrong/nginx:1.13
+> # 仓库及标签 (格式 用户名/镜像名称:版本)
+> source_repo: apache/answer:1.13
+> # 目标仓库及标签 (格式 命名空间/镜像名称:版本)
+> destination_repo: username/nginx:1.13
 > ```
 > 必须要填写仓库及标签
+> 'username'换成你阿里云的'命名空间'
 
 ## Sync.yml 运行介绍
 
